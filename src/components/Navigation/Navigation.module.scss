@@ -1,0 +1,41 @@
+.navigation {
+  background-color: #171d2c;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  color: white
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.fin {
+  display: inline;
+  background-color: rgb(0, 140, 255);
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 5px;
+}
+
+.title{
+  display: inline;
+}
+
+.button{
+  background-color: #283047 !important;
+}
+
+.menuClose{
+  background-color: #283047 !important;
+  color:#657193;
+  padding: 0px 5px !important;
+}
