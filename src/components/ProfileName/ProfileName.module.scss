@@ -1,0 +1,16 @@
+.profileName{
+  display: inline-flex;
+  align-items: center;
+}
+
+.avatar{
+  width: 30px !important;
+  height: 30px !important;
+  color: inherit !important;
+}
+
+.name {
+  margin: 0 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}

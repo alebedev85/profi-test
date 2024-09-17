@@ -1,25 +1,33 @@
 @import '../../styles/vars';
 
 .page {
-  display: grid;
+  position: relative;
   overflow: auto;
   width: 100%;
   height: 100vh;
-  grid-template-columns: 20% auto;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "sidebar profile"
-    "sidebar children";
+  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+  padding-left: 320px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+
+.content {
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .profile {
-  grid-area: profile;
-  width: 100%;
-  height: 100%;
 }
 
 .children {
-  grid-area: children;
   width: 100%;
   height: 100%;
 }
