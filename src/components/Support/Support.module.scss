@@ -1,0 +1,30 @@
+@import "../../styles/vars";
+
+.support {
+  background-color: $darkblue;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  color: white;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, auto) ;
+
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  color: $middlegray;
+  border-bottom: 1px solid $middlegray;
+  &:last-child {
+    border-bottom: none
+  }
+}
