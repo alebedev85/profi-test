@@ -1,4 +1,16 @@
+@import '../../styles/vars';
+
 .tariff{
   display: inline-flex;
   align-items: center;
+  background-color: $bluelight;
+  border-radius: $borderRadius;
+  padding: 15px 10px;
+  color: $blue;
+}
+
+.tariffText{
+  margin-left: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
 }

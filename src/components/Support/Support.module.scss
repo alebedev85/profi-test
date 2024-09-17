@@ -1,7 +1,7 @@
 @import "../../styles/vars";
 
 .support {
-  background-color: $darkblue;
+  background-color: $bluedark;
   border-radius: $borderRadius;
   box-sizing: border-box;
   padding: 10px;
@@ -15,16 +15,15 @@
 
 .info {
   display: grid;
-  grid-template-columns: repeat(2, auto) ;
-
+  grid-template-columns: repeat(2, auto);
 }
 
 .link {
   text-decoration: none;
   display: block;
-  color: $middlegray;
-  border-bottom: 1px solid $middlegray;
+  color: $graymiddle;
+  border-bottom: 1px solid $graymiddle;
   &:last-child {
-    border-bottom: none
+    border-bottom: none;
   }
 }

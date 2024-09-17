@@ -1,7 +1,7 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 .navigation {
-  background-color: $darkblue;
+  background-color: $bluedark;
   border-radius: $borderRadius;
   box-sizing: border-box;
   padding: 10px;
@@ -10,7 +10,7 @@
   justify-content: center;
   gap: 5px;
   width: 100%;
-  color: white
+  color: white;
 }
 
 .head {
@@ -28,17 +28,17 @@
   margin-right: 5px;
 }
 
-.title{
+.title {
   display: inline;
 }
 
-.button{
-  background-color: $darkgray !important;
+.button {
+  background-color: $graydark !important;
   justify-content: flex-start !important;
 }
 
-.menuClose{
-  background-color: $darkgray !important;
-  color:$middlegray !important;
+.menuClose {
+  background-color: $graydark !important;
+  color: $graymiddle !important;
   padding: 0px 5px !important;
 }
