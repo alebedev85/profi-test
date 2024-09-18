@@ -1,0 +1,21 @@
+@import "../../styles/vars";
+
+.headline{
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  display: inline;
+  color: $bluedark;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 25px;
+}
+
+.button {
+  background: $bluedark !important;
+  border-radius: 100px !important;
+  color: white !important;
+  font-size: 12px !important;
+}
