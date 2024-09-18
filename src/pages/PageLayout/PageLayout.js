@@ -9,7 +9,7 @@ function PageLayout({ children }) {
       <Sidebar className={styles.sidebar} />
       <div className={styles.content}>
         <Profile className={styles.profile} />
-        <div className={styles.children}>111{children}</div>
+        <div className={styles.children}>{children}</div>
       </div>
     </div>
   );

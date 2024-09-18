@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.scss';
-import PageLayout from './pages/PageLayout/PageLayout';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.scss";
+import PageLayout from "./pages/PageLayout/PageLayout";
+import Report from "./pages/Report/Report";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <PageLayout />
+    <PageLayout>
+      <Report />
+    </PageLayout>
   </React.StrictMode>
 );
-
