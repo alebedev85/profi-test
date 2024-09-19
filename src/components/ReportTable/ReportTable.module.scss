@@ -1,0 +1,19 @@
+@import '../../styles/vars';
+
+.tableContainer {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.table {
+  border-spacing: 5px !important;
+  border-radius: 5px;
+}
+
+.footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}

@@ -6,10 +6,10 @@ import styles from "./PageLayout.module.scss";
 function PageLayout({ children }) {
   return (
     <div className={styles.page}>
-      <Sidebar className={styles.sidebar} />
+      <Sidebar />
       <div className={styles.content}>
-        <Profile className={styles.profile} />
-        <div className={styles.children}>{children}</div>
+        <Profile />
+        <div>{children}</div>
       </div>
     </div>
   );
