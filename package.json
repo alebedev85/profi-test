@@ -1,7 +1,7 @@
 {
   "name": "profi-test",
   "version": "0.1.0",
-  "homepage": "https://alebedev85.github.io/re-action-test/",
+  "homepage": "alebedev85.github.io/profi-test/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
