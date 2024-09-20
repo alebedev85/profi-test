@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/re-action-test/static/css/main.c605c3dd.css",
+    "main.js": "/re-action-test/static/js/main.58107aba.js",
+    "index.html": "/re-action-test/index.html",
+    "main.c605c3dd.css.map": "/re-action-test/static/css/main.c605c3dd.css.map",
+    "main.58107aba.js.map": "/re-action-test/static/js/main.58107aba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c605c3dd.css",
+    "static/js/main.58107aba.js"
+  ]
+}
