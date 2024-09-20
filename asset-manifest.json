@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/re-action-test/static/css/main.c605c3dd.css",
-    "main.js": "/re-action-test/static/js/main.58107aba.js",
-    "index.html": "/re-action-test/index.html",
-    "main.c605c3dd.css.map": "/re-action-test/static/css/main.c605c3dd.css.map",
-    "main.58107aba.js.map": "/re-action-test/static/js/main.58107aba.js.map"
+    "main.css": "/alebedev85.github.io/profi-test/static/css/main.c605c3dd.css",
+    "main.js": "/alebedev85.github.io/profi-test/static/js/main.58107aba.js",
+    "index.html": "/alebedev85.github.io/profi-test/index.html",
+    "main.c605c3dd.css.map": "/alebedev85.github.io/profi-test/static/css/main.c605c3dd.css.map",
+    "main.58107aba.js.map": "/alebedev85.github.io/profi-test/static/js/main.58107aba.js.map"
   },
   "entrypoints": [
     "static/css/main.c605c3dd.css",
