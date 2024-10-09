@@ -3,6 +3,7 @@ import styles from "./SupportBadge.module.scss";
 interface ISupportBadgeProps {
   label: string;
   text: string;
+  className?: string
 }
 
 export default function SupportBadge({ label, text }: ISupportBadgeProps) {

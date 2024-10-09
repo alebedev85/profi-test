@@ -1,9 +1,15 @@
+import { ReactNode } from "react";
+
 import Sidebar from "../Sidebar/Sidebar";
 import Profile from "../Profile/Profile";
 
 import styles from "./PageLayout.module.scss";
 
-function PageLayout({ children }) {
+interface IPageLayoutProps {
+  children: ReactNode;
+}
+
+function PageLayout({ children }: IPageLayoutProps) {
   return (
     <div className={styles.page}>
       <Sidebar />

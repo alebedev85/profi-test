@@ -1,4 +1,3 @@
-import React from "react";
 import ProfileName from "../../components/ProfileName/ProfileName";
 import Tariff from "../../components/Tariff/Tariff";
 import ProfileButtons from "../../components/ProfileButtons/ProfileButtons";

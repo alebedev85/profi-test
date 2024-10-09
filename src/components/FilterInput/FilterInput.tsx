@@ -1,8 +1,11 @@
-import React from "react";
-
 import styles from "./FilterInput.module.scss";
 
-export default function FilterInput({ label, inputText }) {
+interface IFilterInputProps {
+  label: string;
+  inputText: string;
+}
+
+export default function FilterInput({ label, inputText }: IFilterInputProps) {
   return (
     <div className={styles.filterInput}>
       <p className={styles.label}>{label}</p>

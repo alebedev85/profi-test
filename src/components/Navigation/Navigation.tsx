@@ -18,7 +18,6 @@ export default function Navigation() {
         </h2>
         <Button
           className={styles.menuClose}
-          color=""
           size="small"
           variant="text"
           endIcon={<CloseIcon />}

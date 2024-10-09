@@ -1,4 +1,3 @@
-import React from "react";
 import ReportHeadline from "../../components/ReportHeadline/ReportHeadline";
 import ReportFilter from "../../components/ReportFilter/ReportFilter";
 import ReportData from "../../components/ReportData/ReportData";

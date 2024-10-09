@@ -1,4 +1,3 @@
-import React from "react";
 import SupportBadge from "../ui/SupportBadge/SupportBadge";
 import styles from "./Support.module.scss";
 
