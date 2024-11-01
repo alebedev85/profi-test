@@ -16,7 +16,7 @@
     "jsx": "react-jsx",
     "incremental": true,
     "importHelpers": true,
-    "outDir": "./dist"
+    "outDir": "./public"
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules"],

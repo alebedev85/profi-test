@@ -1,16 +1,18 @@
 import styles from "./SupportBadge.module.scss";
 
-interface ISupportBadgeProps {
+interface SupportBadgeProps {
   label: string;
   text: string;
-  className?: string
+  className?: string;
 }
 
-export default function SupportBadge({ label, text }: ISupportBadgeProps) {
+const SupportBadge = ({ label, text }: SupportBadgeProps) => {
   return (
     <div>
       <p className={styles.label}>{label}</p>
       <p className={styles.text}>{text}</p>
     </div>
   );
-}
+};
+
+export default SupportBadge;
