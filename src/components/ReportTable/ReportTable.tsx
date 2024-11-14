@@ -6,11 +6,10 @@ import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import { styled } from "@mui/material/styles";
 import TableBody from "@mui/material/TableBody";
 import { TableFooter } from "@mui/material";
+import { dataSelector } from "../../redux/slices/dataSlice";
+import { useAppSelector } from "../../redux/store";
 
 import styles from "./ReportTable.module.scss";
-
-import data from "../../assets/data/DATA.json";
-
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.white,
@@ -35,6 +34,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 export default function ReportTable() {
+  const { data } = useAppSelector(dataSelector);
   return (
     <TableContainer sx={{ maxHeight: 500 }} className={styles.tableContainer}>
       <Table
@@ -52,21 +52,27 @@ export default function ReportTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((row) => (
-            <StyledTableRow key={row.id}>
-              <StyledTableCell component="th" scope="row">
-                {row.barcode}
-              </StyledTableCell>
-              <StyledTableCell align="left">
-                {row.product_brand}
-              </StyledTableCell>
-              <StyledTableCell align="left">{row.product_name}</StyledTableCell>
-              <StyledTableCell align="left">
-                {row.product_quantity}
-              </StyledTableCell>
-              <StyledTableCell align="left">{row.price}</StyledTableCell>
-            </StyledTableRow>
-          ))}
+          {data ? (
+            data.map((row) => (
+              <StyledTableRow key={row.id}>
+                <StyledTableCell component="th" scope="row">
+                  {row.barcode}
+                </StyledTableCell>
+                <StyledTableCell align="left">
+                  {row.product_brand}
+                </StyledTableCell>
+                <StyledTableCell align="left">
+                  {row.product_name}
+                </StyledTableCell>
+                <StyledTableCell align="left">
+                  {row.product_quantity}
+                </StyledTableCell>
+                <StyledTableCell align="left">{row.price}</StyledTableCell>
+              </StyledTableRow>
+            ))
+          ) : (
+            <></>
+          )}
         </TableBody>
         <TableFooter className={styles.footer}>
           <TableRow>
@@ -74,10 +80,12 @@ export default function ReportTable() {
             <StyledTableCell align="left"></StyledTableCell>
             <StyledTableCell align="left"></StyledTableCell>
             <StyledTableCell align="left">
-              {data.reduce((sum, row) => sum + row.product_quantity, 20)}
+              {data
+                ? data.reduce((sum, row) => sum + row.product_quantity, 0)
+                : 0}
             </StyledTableCell>
             <StyledTableCell align="left">
-              {data.reduce((sum, row) => sum + row.price, 20)}
+              {data ? data.reduce((sum, row) => sum + row.price, 0) : 0}
             </StyledTableCell>
           </TableRow>
         </TableFooter>
